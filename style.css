@@ -200,7 +200,7 @@ span {
   }
 
   .nav__items {
-    gap: 50%;
+    gap: 20%;
   }
 
   .nav__item a {
@@ -233,7 +233,7 @@ span {
     }
 
   .project__link, .contact__link {
-      font-size: 10px;
+      font-size: 14px;
     }
      
     .main__items {
@@ -253,7 +253,7 @@ span {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 10px;
+      padding: 20px;
     }
 
     .footer__git a{
