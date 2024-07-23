@@ -162,22 +162,30 @@ span {
  
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 15%;
   align-items: center;
   padding: 20px;
   background-color: rgb(173, 196, 190);
 }
 
-.footer__git {
+.footer__git a {
   display: flex;
+  justify-content: center;
+}
+
+#contacts {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
 .main__items.contact {
+  padding: 0;
   list-style: none;
 }
 
 .icon__footer {
-  margin-left: 100px;
   width: 20%;
   transition: transform 1s ease-in-out;
 }
@@ -187,22 +195,27 @@ span {
 }
 
 @media (max-width: 768px) {
+  .header {
+    padding: 0;
+  }
 
   .nav__items {
-    gap: 10px;
+    gap: 50%;
   }
 
   .nav__item a {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .main__container {
-    padding: 3px;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    padding: 1px;
   }
 
   .section {
-    padding-left: 10px;
-    margin: 3px;
+    width: 100%;
     border-bottom: 1px dotted green;
     border-radius: 3px;
     background-color: rgb(245, 250, 249);
@@ -216,7 +229,7 @@ span {
     }
 
   .text {
-      font-size: 10px;
+      font-size: 14px;
     }
 
   .project__link, .contact__link {
@@ -224,7 +237,11 @@ span {
     }
      
     .main__items {
-      padding-left: 10px;
+      padding-left: 14px;
+    }
+
+    .main__items.contact {
+      margin: 0;
     }
 
   .myphoto {
@@ -236,10 +253,16 @@ span {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 10px;
+    }
+
+    .footer__git a{
+      display: flex;
+      justify-content: center;
+      justify-items: center;
     }
 
   .icon__footer {
-      margin-left: 200px;
       width: 7%;
     }
 }
