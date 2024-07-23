@@ -200,11 +200,11 @@ span {
   }
 
   .nav__items {
-    gap: 20%;
+    gap: 15%;
   }
 
   .nav__item a {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .main__container {
