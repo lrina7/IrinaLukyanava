@@ -53,7 +53,7 @@ body, html {
   font-size: 28px;
   font-weight: bold;
   color: #708974;
-  transition: color 0.5s;
+  transition: color 1s;
 }
 
 .nav__item a:hover {
@@ -104,11 +104,11 @@ background-color: rgb(245, 250, 249);
   max-width: 10%;
   margin-left: 5%;
   border: 1px solid  #708974;
+  transition-duration: 1s;
   transition: transform 1s ease-in-out;
 }
 
 #certificate:hover {
-border: 1px solid black;
 transform: scale(5);
 cursor: pointer;
 }
@@ -158,32 +158,36 @@ span {
   font-size: 20px;
   text-decoration: none;
   color: black;
+  transition-duration: 1s;
 }
 
-.project__link:hover, .contact__link:hover {
-  text-decoration: underline;
-  color: black;
+.project__link:hover {
+  color: #42694b;
   font-weight: bolder;
+
+} 
+
+.contact__link:hover {
+  color: white;
 }
  
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   background-color: rgb(173, 196, 190);
 }
 
 .footer__git a {
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 
 #contacts {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   justify-items: center;
-  padding-right: 40px;
 }
 
 .main__items.contact {
