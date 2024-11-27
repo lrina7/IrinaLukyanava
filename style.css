@@ -24,6 +24,8 @@ html {
 }
 
 .header {
+  display: flex;
+  flex-direction: row;
   position: fixed;
   top: 0;
   margin: 0 auto;
@@ -36,12 +38,34 @@ html {
   padding: 1%;
 }
 
+.header__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 20%;
+}
+
+.logo__cat {
+  width: 40px;
+  border-radius: 50%;
+  border: 3px solid #708974;
+}
+
+.nav {
+  width: 80%;
+}
+
 .nav__items {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100%;
+  gap: 50%;
   list-style: none;
 }
 
@@ -54,8 +78,8 @@ html {
   text-decoration: none;
   font-size: 28px;
   font-weight: bold;
-  color: #708974;
-  transition: color 1s;
+  color: #42694b;
+  transition: color 0.3s;
 }
 
 .nav__item a:hover {
@@ -74,7 +98,7 @@ html {
 
 .section {
   width: 45%;
-  padding-left: 40px;
+  padding-left: 30px;
   margin: 10px;
   border-bottom: 3px dotted green;
   border-radius: 10px;
@@ -149,7 +173,7 @@ span {
   font-size: 20px;
   text-decoration: none;
   color: black;
-  transition-duration: 1s;
+  transition-duration: 0.3s;
 }
 
 .project__link:hover {
@@ -187,7 +211,7 @@ span {
 
 .icon__footer {
   width: 20%;
-  transition: transform 1s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .icon__footer:hover {
@@ -197,6 +221,10 @@ span {
 @media (max-width: 768px) {
   .header {
     padding: 0;
+  }
+
+  .logo__cat {
+    width: 25px;
   }
 
   .nav__item a {
@@ -212,6 +240,7 @@ span {
 
   .section {
     width: 95%;
+    padding-left: 5px;
     border-bottom: 1px dotted green;
     border-radius: 3px;
     background-color: rgb(245, 250, 249);
