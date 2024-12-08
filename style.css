@@ -52,8 +52,9 @@ html {
 
 .logo__cat {
   width: 40px;
+  padding: 1px;
   border-radius: 50%;
-  border: 3px solid #708974;
+  border: 1px solid #708974;
 }
 
 .nav {
