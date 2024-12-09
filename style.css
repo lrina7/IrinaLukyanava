@@ -100,7 +100,9 @@ html {
 .section {
   width: 45%;
   padding-left: 30px;
+  padding-right: 20px;
   margin: 10px;
+  text-align: justify;
   border-bottom: 3px dotted green;
   border-radius: 10px;
   background-color: rgb(245, 250, 249);
