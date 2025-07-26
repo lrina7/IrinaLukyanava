@@ -146,8 +146,12 @@ html {
 .title__discr {
   font-family: "Baskervville SC", serif;
   font-weight: 900;
+  font-size: 2rem;
   font-style: normal;
   color: #42694b;
+}
+.main {
+  font-size: 3rem;
 }
 
 .text {
